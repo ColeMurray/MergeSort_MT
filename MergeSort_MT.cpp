@@ -102,8 +102,7 @@ void* mergeSort_thread (void* params){
 }
 
 void mergeSort_pub (int * arr, int start, int end){
-    mergeSort_mt(arr,start,end,4);
-    //4 will create 7 threads
+    mergeSort_mt(arr,start,end,4); //2N -1 threads are created
 }
 
 
